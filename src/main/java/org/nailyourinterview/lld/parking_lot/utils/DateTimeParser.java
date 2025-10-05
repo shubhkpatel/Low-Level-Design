@@ -1,4 +1,4 @@
-package org.lld_yt.parking_lot.utils;
+package org.nailyourinterview.lld.parking_lot.utils;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

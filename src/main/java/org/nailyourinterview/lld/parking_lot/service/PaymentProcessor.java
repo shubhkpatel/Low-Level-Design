@@ -1,8 +1,8 @@
-package org.lld_yt.parking_lot.service;
+package org.nailyourinterview.lld.parking_lot.service;
 
-import org.lld_yt.parking_lot.enums.PaymentStatus;
-import org.lld_yt.parking_lot.model.Ticket;
-import org.lld_yt.parking_lot.strategy.payment.PaymentStrategy;
+import org.nailyourinterview.lld.parking_lot.enums.PaymentStatus;
+import org.nailyourinterview.lld.parking_lot.model.Ticket;
+import org.nailyourinterview.lld.parking_lot.strategy.payment.PaymentStrategy;
 
 public class PaymentProcessor {
     private final PaymentStrategy strategy;

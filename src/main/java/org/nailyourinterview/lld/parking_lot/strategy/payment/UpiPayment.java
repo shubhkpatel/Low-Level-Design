@@ -1,6 +1,6 @@
-package org.lld_yt.parking_lot.strategy.payment;
+package org.nailyourinterview.lld.parking_lot.strategy.payment;
 
-import org.lld_yt.parking_lot.model.Ticket;
+import org.nailyourinterview.lld.parking_lot.model.Ticket;
 
 public class UpiPayment implements PaymentStrategy {
     @Override

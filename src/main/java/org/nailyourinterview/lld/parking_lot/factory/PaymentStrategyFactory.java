@@ -1,7 +1,7 @@
-package org.lld_yt.parking_lot.factory;
+package org.nailyourinterview.lld.parking_lot.factory;
 
-import org.lld_yt.parking_lot.enums.PaymentMode;
-import org.lld_yt.parking_lot.strategy.payment.*;
+import org.nailyourinterview.lld.parking_lot.enums.PaymentMode;
+import org.nailyourinterview.lld.parking_lot.strategy.payment.*;
 
 public class PaymentStrategyFactory {
     public static PaymentStrategy get(PaymentMode mode) {

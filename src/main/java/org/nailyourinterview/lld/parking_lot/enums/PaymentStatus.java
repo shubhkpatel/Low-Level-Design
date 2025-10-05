@@ -1,4 +1,4 @@
-package org.lld_yt.parking_lot.enums;
+package org.nailyourinterview.lld.parking_lot.enums;
 
 public enum PaymentStatus {
     PENDING,

@@ -1,13 +1,13 @@
-package org.lld_yt.parking_lot.service;
+package org.nailyourinterview.lld.parking_lot.service;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.lld_yt.parking_lot.enums.PaymentMode;
-import org.lld_yt.parking_lot.enums.*;
-import org.lld_yt.parking_lot.factory.*;
-import org.lld_yt.parking_lot.model.*;
-import org.lld_yt.parking_lot.strategy.payment.*;
-import org.lld_yt.parking_lot.strategy.pricing.*;
+import org.nailyourinterview.lld.parking_lot.enums.PaymentMode;
+import org.nailyourinterview.lld.parking_lot.enums.*;
+import org.nailyourinterview.lld.parking_lot.factory.*;
+import org.nailyourinterview.lld.parking_lot.model.*;
+import org.nailyourinterview.lld.parking_lot.strategy.payment.*;
+import org.nailyourinterview.lld.parking_lot.strategy.pricing.*;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;

@@ -1,10 +1,10 @@
-package org.lld_yt.parking_lot;
+package org.nailyourinterview.lld.parking_lot;
 
-import org.lld_yt.parking_lot.enums.*;
-import org.lld_yt.parking_lot.factory.*;
-import org.lld_yt.parking_lot.model.*;
-import org.lld_yt.parking_lot.service.*;
-import org.lld_yt.parking_lot.utils.DateTimeParser;
+import org.nailyourinterview.lld.parking_lot.enums.*;
+import org.nailyourinterview.lld.parking_lot.factory.*;
+import org.nailyourinterview.lld.parking_lot.model.*;
+import org.nailyourinterview.lld.parking_lot.service.*;
+import org.nailyourinterview.lld.parking_lot.utils.DateTimeParser;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;

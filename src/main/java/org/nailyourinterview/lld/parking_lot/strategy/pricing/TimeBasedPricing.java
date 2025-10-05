@@ -1,6 +1,6 @@
-package org.lld_yt.parking_lot.strategy.pricing;
+package org.nailyourinterview.lld.parking_lot.strategy.pricing;
 
-import org.lld_yt.parking_lot.enums.VehicleType;
+import org.nailyourinterview.lld.parking_lot.enums.VehicleType;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

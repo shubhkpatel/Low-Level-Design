@@ -1,8 +1,8 @@
-package org.lld_yt.parking_lot.model;
+package org.nailyourinterview.lld.parking_lot.model;
 
 import lombok.Builder;
 import lombok.Data;
-import org.lld_yt.parking_lot.enums.PaymentStatus;
+import org.nailyourinterview.lld.parking_lot.enums.PaymentStatus;
 
 import java.time.LocalDateTime;
 

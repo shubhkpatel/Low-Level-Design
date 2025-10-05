@@ -1,8 +1,8 @@
-package org.lld_yt.parking_lot.model;
+package org.nailyourinterview.lld.parking_lot.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.lld_yt.parking_lot.enums.GateType;
+import org.nailyourinterview.lld.parking_lot.enums.GateType;
 
 @Getter
 @AllArgsConstructor
