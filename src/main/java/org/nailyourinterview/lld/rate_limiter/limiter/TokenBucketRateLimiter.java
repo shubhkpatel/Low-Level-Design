@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class TokenBucketRateLimiter extends RateLimiter {
     private final Map<String, Integer> tokens = new ConcurrentHashMap<>();
-    private final Map<String, Long> lastRefillTime = new HashMap<>();
+    private final Map<String, Long> lastRefillTime = new ConcurrentHashMap<>();
 
     public TokenBucketRateLimiter(RateLimitConfig config) {
         super(config, RateLimitType.TOKEN_BUCKET);
@@ -44,14 +44,15 @@ public class TokenBucketRateLimiter extends RateLimiter {
     private int refillTokens(String userId, long now) {
         double refillRate = (double) config.getWindowInSeconds() / config.getMaxRequests();
 
-        long lastRefill = lastRefillTime.getOrDefault(userId, now);
+        lastRefillTime.putIfAbsent(userId, now);
+        long lastRefill = lastRefillTime.get(userId);
+
         long elapsedSeconds = (now - lastRefill) / 1000;
         int refillTokens = (int) (elapsedSeconds / refillRate);
-
         int currentTokens = tokens.getOrDefault(userId, config.getMaxRequests());
         currentTokens = Math.min(config.getMaxRequests(), currentTokens + refillTokens);
-        if (refillTokens > 0) lastRefillTime.put(userId, now);
 
+        if (refillTokens > 0) lastRefillTime.put(userId, now);
         return currentTokens;
     }
 }
